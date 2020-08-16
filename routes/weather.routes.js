@@ -11,7 +11,7 @@ router.get('/:location', async (req, res) => {
         const url = `http://api.openweathermap.org/data/2.5/weather?q=${escape(location)}&appid=${config.get('token')}&lang=ru&units=metric`
         const response = await fetch(url)
         const result = await response.json()
-        let responseClient = null
+        let responseClient
         if (result.cod === 200) {
             responseClient = {
                 location: `${result.name}, ${result.sys.country}`,
