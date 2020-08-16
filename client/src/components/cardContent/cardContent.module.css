@@ -1,0 +1,175 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0 -16px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 20px 20px 0 0;
+    z-index: 0;
+    font-family: Barlow;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.titleDate{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #999999;
+    padding: 18px 20px;
+}
+
+.titleLocation{
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: rgba(13, 159, 234, 0.08);
+    color: #0DA0EA;
+    padding: 15px 34px 15px 24px;
+    border-radius: 0 25px 0 25px;
+}
+
+.titleLocation:before{
+    content: url("/img/search-icon.png");
+    position: absolute;
+    right: 18px;
+}
+
+.content{
+    padding: 40px 15px;
+}
+
+.main, .atmosphere{
+    display: flex;
+    margin-bottom: 46px;
+}
+
+.description{
+    flex: 33.3%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.description img {
+    width: 70px;
+}
+
+.descriptionText{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.05em;
+}
+
+.temperature{
+    display: flex;
+    flex: 33.3%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperatureValue{
+    position: relative;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: -0.05em;
+    padding: 5px;
+    color: #000000;
+}
+
+.temperatureValue:after{
+    content: "°C";
+    position: absolute;
+    top: 15px;
+    right: -20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #666666;
+}
+
+.maxMin{
+    display: flex;
+    flex: 33.3%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #666666;
+}
+
+.max,.min{
+    margin-bottom: 13px;
+    position: relative;
+}
+
+.max span{
+    color: #AAAAAA;
+    top: -2px;
+    position: absolute;
+}
+.min span{
+    color: #AAAAAA;
+    position: absolute;
+}
+
+.atmosphere, .timing{
+    display: flex;
+}
+
+.humidity, .pressure, .wind, .sunrise, .sunset, .daytime{
+    flex: 33.3%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.humidity img, .pressure img, .wind img, .sunrise img, .sunset img, .daytime img{
+    margin-bottom: 13px;
+}
+
+
+.humidityValue, .pressureValue, .windValue, .sunriseValue, .sunsetValue, .daytimeValue{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.05em;
+    color: #444444;
+    margin-bottom: 4px;
+}
+
+.humidityText, .pressureText, .windText, .sunriseText, .sunsetText, .daytimeText{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #999999;
+}
