@@ -3,7 +3,7 @@ const config = require('config')
 const fetch = require('node-fetch')
 const {escape} = require('querystring')
 
-const popular = ['Москва', 'Нью-Йорк', 'Пекин', 'Париж', 'Сидней']
+const popular = ['Москва', 'Нью-Йорк', 'Пекин', 'Париж', 'Лондон']
 
 router.get('/:location', async (req, res) => {
     try {
